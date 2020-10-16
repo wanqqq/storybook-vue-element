@@ -1,13 +1,25 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <div class="home">
+        <img alt="Vue logo" src="./assets/logo.png" />
+        <HelloWorld msg="Welcome to Your Vue.js App" />
+      </div>
     </div>
-    <router-view/>
   </div>
 </template>
 
+
+<script>
+import HelloWorld from '../src/components/HelloWorld';
+
+export default {
+  name: 'Home',
+  components: {
+    HelloWorld,
+  },
+};
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
